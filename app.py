@@ -32,7 +32,7 @@ def set_background_image(image_path):
 set_background_image('img.png')
 
 # Title of the application
-st.title('Exploratory Data Analysis with Streamlit')
+st.title('Exploratory Data Analysis of NFL with Streamlit')
 
 # File uploader widget
 uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
