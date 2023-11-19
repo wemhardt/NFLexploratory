@@ -14,7 +14,8 @@ if st.checkbox('Histogram plot of a column'):
         column = st.selectbox('Select column for histogram', df.columns, index=2)
         sns.histplot(df[column], bins=25)
         st.pyplot(plt.gcf())
-
+if st.checkbox('Show a random sample of the data'):
+        st.write(df.sample(15))
 else:
     st.write("Upload a CSV file to get started")
 
